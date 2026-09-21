@@ -1,0 +1,25 @@
+services:
+  orderApi:
+    name: order-api
+    image:
+      repository: order-api
+      tag: "1.0.0"
+    port: 8000
+    replicas: 1
+
+  orderProcessor:
+    name: order-processor
+    image:
+      repository: order-processor
+      tag: "1.0.0"
+    port: 8000
+    replicas: 1
+
+  notificationService:
+    name: notification-service
+    image:
+      repository: notification-service
+      tag: "1.0.0"
+    port: 8000
+    replicas: 1
+
